@@ -459,7 +459,7 @@ a:hover {
     margin-left: 2px;
 }
 .gift__main-descr {
-    margin-top: 38px;
+    /* margin-top: 38px; */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px 16px;
@@ -662,6 +662,8 @@ a:hover {
 }
 .gallery__item-title {
     font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
 }
 .button_type_primary {
     min-width: 150px;
@@ -2435,7 +2437,8 @@ a.radio_item-descr {
 }
 .gift__main-slider .gallery__item-title {
     position: absolute;
-    top: -80px;
+    top: -80px; 
+
 }
 .gift__main-slider .button_type_primary {
     position: absolute;

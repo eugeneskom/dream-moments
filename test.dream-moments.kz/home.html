@@ -31,9 +31,9 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/index_v1.css">	
 	<link rel="stylesheet" type="text/css" href="./assets/css/style_v48.css">
 	
+	<link rel="stylesheet" type="text/css" href="./assets/css/style-dev_v8.css">
 	<link rel="stylesheet" type="text/css" href="./assets/css/dev2_v1.css">
 	
-	<link rel="stylesheet" type="text/css" href="./assets/css/style-dev_v8.css">
 
     <script type="text/javascript" async="" src="../../mc.yandex.ru/metrika/watch.js"></script><script type="application/ld+json">
         {
@@ -66,10 +66,10 @@
     </head>
 
 <body>
-			<div class="attention_wrapper">
+			<!-- <div class="attention_wrapper">
 			<div class="attention">
 				Доставка и самовывоз - 7 дней в неделю! Электронный сертификат мгновенно на email.			</div>
-		</div>
+		</div> -->
 	
     <header class="header__main">
         <div class="container__main">
@@ -218,87 +218,113 @@
     </header>
 	
 	<section class="gift__main header-catalog">
+		<div class="navigation navigation_type_category page__categories" id="CategoryNavigation">
+			<div class="navigation-container-mobile">
+				<div class="navigation__brand navigation__brand-mobile" data-toggle="false" data-target="#MainCategoryMenu1">
+					Каталог подарков
+					<span class="navigation__toggle"></span>
+				</div>
+				<div class="button button_type_primary activate__button activate__button-mobile js-activate">Активировать</div>
+			</div>
+            <div id="MainCategoryMenu1" class="menu menu_type_vertical menu_type_category navigation__collapse">
+                <div class="navigation__section">
+                    <span class="menu__item menu__item_active dropdown-indicator" data-toggle="false" data-target=".categories-popup">Все подарки
+
+											<svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" width="12px" fill="#ffc627" stroke="#ffc627"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <defs> <style>.cls-1{fill:#ffc627;}</style> </defs> <g data-name="arrow down" id="arrow_down"> <path class="cls-1" d="M16,23a3,3,0,0,1-2.12-.88L2.56,10.76A1,1,0,0,1,4,9.34L15.29,20.66a1,1,0,0,0,1.42,0L28,9.34a1,1,0,1,1,1.41,1.42L18.12,22.07A3,3,0,0,1,16,23Z"></path> </g> </g></svg>
+										</span>
+                    													<a class="menu__item" href="/catalog/male" title="Для мужчин">
+								Для мужчин							</a>
+						                    													<a class="menu__item" href="/catalog/female" title="Для женщин">
+								Для женщин							</a>
+						                    													<a class="menu__item" href="/catalog/drive" title="Экстрим, Активный отдых">
+								Экстрим, Активный отдых							</a>
+						                    													<a class="menu__item" href="/catalog/flying" title="Полеты">
+								Полеты							</a>
+						                    													<a class="menu__item" href="/catalog/spa" title="SPA">
+								SPA							</a>
+						                    													<a class="menu__item" href="/catalog/kids" title="Детям">
+								Детям							</a>
+						                                    </div>
+                <div class="navigation__section menu_type_category__special">
+                    <a class="menu__item" href="/catalog#multi-gifts" title="Мультиподарки">
+                        Мультиподарки
+                    </a>
+                    <a class="menu__item" href="/corporative-clients" title="Корпоративные подарки">
+                        Корпоративные подарки
+                    </a>
+                </div>
+
+                <div class="categories-popup menu_type_category menu_type_category-popup">
+					<svg class="close-category-modal" viewBox="0 0 24 24"><path d="M22.2,4c0,0,0.5,0.6,0,1.1l-6.8,6.8l6.9,6.9c0.5,0.5,0,1.1,0,1.1L20,22.3c0,0-0.6,0.5-1.1,0L12,15.4l-6.9,6.9c-0.5,0.5-1.1,0-1.1,0L1.7,20c0,0-0.5-0.6,0-1.1L8.6,12L1.7,5.1C1.2,4.6,1.7,4,1.7,4L4,1.7c0,0,0.6-0.5,1.1,0L12,8.5l6.8-6.8c0.5-0.5,1.1,0,1.1,0L22.2,4z"></path></svg>
+                    <div class="categories-popup__content">
+                                                <div class="categories-popup__section">
+                                                            <a class="menu__item" href="/catalog/male">
+                                    Для мужчин                                </a>
+                                                            <a class="menu__item" href="/catalog/female">
+                                    Для женщин                                </a>
+                                                            <a class="menu__item" href="/catalog/couple">
+                                    Подарки для двоих                                </a>
+                                                            <a class="menu__item" href="/catalog/kids">
+                                    Детям                                </a>
+                                                            <a class="menu__item" href="/catalog/dlya-kompanii">
+                                    Для компании                                </a>
+                                                    </div>
+                        <div class="categories-popup__section">
+                                                            <a class="menu__item" href="/catalog/drive">
+                                    Экстрим, Активный отдых                                </a>
+                                                            <a class="menu__item" href="/catalog/flying">
+                                    Полеты                                </a>
+                                                            <a class="menu__item" href="/catalog/spa">
+                                    SPA                                </a>
+                                                            <a class="menu__item" href="/catalog/romantika">
+                                    Романтика                                </a>
+                                                            <a class="menu__item" href="/catalog/learning">
+                                    Мастер-классы, Хобби, Творчество                                </a>
+                                                            <a class="menu__item" href="/catalog/fotosessiya">
+                                    Фотосессии                                </a>
+                                                            <a class="menu__item" href="/catalog/zagorodnyj-otdyh-almaty">
+                                    Загородные отели и путешествия                                </a>
+                                                            <a class="menu__item" href="/catalog/restorany-almaty">
+                                    Рестораны и бары                                </a>
+                                                            <a class="menu__item" href="/catalog/magaziny-almaty">
+                                    Магазины                                 </a>
+                                                            <a class="menu__item" href="/catalog/dlya-avtolyubitelej-almaty">
+                                    Картинг, снегоходы, багги, квадроциклы                                </a>
+                                                            <a class="menu__item" href="/catalog/vpechatleniya-s-zhivotnymi">
+                                    Впечатления с животными                                </a>
+                                                            <a class="menu__item" href="/catalog/sertifikaty-strelba">
+                                    Тир и стрельба                                </a>
+                                                            <a class="menu__item" href="/catalog/vpechatleniya-voda">
+                                    Впечатления на воде                                 </a>
+                                                    </div>
+                        <div class="categories-popup__section">
+                                                            <a class="menu__item" href="/catalog/8-march">
+                                    Подарки на 8 марта                                </a>
+                                                            <a class="menu__item" href="/catalog/7-may">
+                                    Подарки на 7 мая                                </a>
+                                                            <a class="menu__item" href="/catalog/14-february">
+                                    Подарки на 14 февраля                                </a>
+                                                            <a class="menu__item" href="/catalog/new-year">
+                                    Подарки на Новый Год                                </a>
+                                                            <a class="menu__item" href="/catalog/birthday">
+                                    Подарки на День Рождения                                </a>
+                                                            <a class="menu__item" href="/catalog/anniversary">
+                                    Подарки на юбилей                                </a>
+                                                            <a class="menu__item" href="/catalog/wedding">
+                                    Подарки на свадьбу                                </a>
+                                                    </div>
+                        <div class="categories-popup__section categories-popup__section_type_right">
+                            <a class="menu__item" href="/corporative-clients#multi-gifts">Корпоративным клиентам</a>
+                            <a class="menu__item" href="/catalog#multi-gifts">Мультиподарки</a>
+                            <a href="/catalog/constructor" class="button button_type_primary">Собрать мультиподарок</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 		<div class="container__main">
 			<div class="gift__main-nav">
-				<div class="gift__main-links">
-					<a class="gift__main-link cursor-pointer" data-toggle="false" data-target=".categories-popup">Каталог</a>
-					<a href="/catalog?multi-gifts" class="gift__main-link">Мультиподарки</a>
-					<a href="/corporative-clients" class="gift__main-link">Корпративные подарки</a>
-					<a href="/catalog/podarochnye-sertifikaty" class="gift__main-link">Электронные сертификаты</a>
-					
-					<div class="categories-popup menu_type_category menu_type_category-popup">
-						<div class="categories-popup__content">
-														<div class="categories-popup__section">
-																	<a class="menu__item" href="/catalog/male">
-										Для мужчин									</a>
-																	<a class="menu__item" href="/catalog/female">
-										Для женщин									</a>
-																	<a class="menu__item" href="/catalog/couple">
-										Подарки для двоих									</a>
-																	<a class="menu__item" href="/catalog/kids">
-										Детям									</a>
-																	<a class="menu__item" href="/catalog/dlya-kompanii">
-										Для компании									</a>
-															</div>
-							<div class="categories-popup__section">
-																	<a class="menu__item" href="/catalog/drive">
-										Экстрим, Активный отдых									</a>
-																	<a class="menu__item" href="/catalog/flying">
-										Полеты									</a>
-																	<a class="menu__item" href="/catalog/spa">
-										SPA									</a>
-																	<a class="menu__item" href="/catalog/romantika">
-										�&nbsp;омантика									</a>
-																	<a class="menu__item" href="/catalog/learning">
-										Мастер-классы, Хобби, Творчество									</a>
-																	<a class="menu__item" href="/catalog/fotosessiya">
-										Фотосессии									</a>
-																	<a class="menu__item" href="/catalog/zagorodnyj-otdyh-almaty">
-										Загородные отели и путешествия									</a>
-																	<a class="menu__item" href="/catalog/restorany-almaty">
-										�&nbsp;естораны и бары									</a>
-																	<a class="menu__item" href="/catalog/magaziny-almaty">
-										Магазины 									</a>
-																	<a class="menu__item" href="/catalog/dlya-avtolyubitelej-almaty">
-										Картинг, снегоходы, багги, квадроциклы									</a>
-																	<a class="menu__item" href="/catalog/vpechatleniya-s-zhivotnymi">
-										Впечатления с животными									</a>
-																	<a class="menu__item" href="/catalog/sertifikaty-strelba">
-										Тир и стрельба									</a>
-																	<a class="menu__item" href="/catalog/vpechatleniya-voda">
-										Впечатления на воде 									</a>
-															</div>
-							<div class="categories-popup__section">
-																	<a class="menu__item" href="/catalog/8-march">
-										Подарки на 8 марта									</a>
-																	<a class="menu__item" href="/catalog/7-may">
-										Подарки на 7 мая									</a>
-																	<a class="menu__item" href="/catalog/14-february">
-										Подарки на 14 февраля									</a>
-																	<a class="menu__item" href="/catalog/new-year">
-										Подарки на Новый Год									</a>
-																	<a class="menu__item" href="/catalog/birthday">
-										Подарки на День �&nbsp;ождения									</a>
-																	<a class="menu__item" href="/catalog/anniversary">
-										Подарки на юбилей									</a>
-																	<a class="menu__item" href="/catalog/wedding">
-										Подарки на свадьбу									</a>
-															</div>
-							<div class="categories-popup__section categories-popup__section_type_right">
-								<a class="menu__item" href="/corporative-clients">Корпоративным клиентам</a>
-								<a class="menu__item" href="/catalog?multi-gifts">Мультиподарки</a>
-								<a href="/catalog/constructor" class="button button_type_primary">Собрать мультиподарок</a>
-							</div>
-						</div>
-					</div>
-					
-				</div>
-				<div class="gift__main-search search-container">
-					<form class="search-form">
-						<input class="gift__main-search_inp" type="text" placeholder="Поиск впечатления">
-						<button type="button" class="search-btn"><i class="fa fa-search"></i></button>
-					</form>
-				</div>
+		
 				<div class="gift__main-certificate">
 					<img src="./assets/image/icons/gift.svg" alt="Подарочный сертификат">
 					<div class="gift__main-certificate_descr">
@@ -349,23 +375,31 @@
 		<!--<h1 class="main-header main-categories__header">Подарки в Алматы</h1>-->
 		
 					<div class="gift__main-descr">
-														<a href="/catalog/birthday" class="gift__main-descr_item"> 
-						<img src="./content/image_webp/category/img_5b45e532d5201.webp" alt="Подарки на День �&nbsp;ождения" class="gift__main-img">
-						<div>Подарки на День �&nbsp;ождения</div>
-					</a>
-														<a href="/catalog/male" class="gift__main-descr_item"> 
-						<img src="./content/image_webp/category/img_63400e74b93d7.webp" alt="Для мужчин" class="gift__main-img">
-						<div>Для мужчин</div>
-					</a>
-														<a href="/catalog/female" class="gift__main-descr_item"> 
-						<img src="./content/image_webp/category/img_63400e63bb8df.webp" alt="Для женщин" class="gift__main-img">
-						<div>Для женщин</div>
-					</a>
-														<a href="/catalog/flying" class="gift__main-descr_item"> 
-						<img src="./content/image_webp/category/img_63400dccf0408.webp" alt="Полеты" class="gift__main-img">
-						<div>Полеты</div>
-					</a>
-							</div>
+						<a href="/catalog/birthday" class="gift__main-descr_item"> 
+							<img src="./content/image_webp/category/img_5b45e532d5201.webp" alt="Подарки на День �&nbsp;ождения" class="gift__main-img">
+							<div>День рождения</div>
+						</a>
+						<a href="/catalog/male" class="gift__main-descr_item"> 
+							<img src="./content/image_webp/category/img_63400e74b93d7.webp" alt="Для мужчин" class="gift__main-img">
+							<div>Активный отдых</div>
+						</a>
+						<a href="/catalog/male" class="gift__main-descr_item"> 
+							<img src="./content/image_webp/category/img_63400e74b93d7.webp" alt="Для мужчин" class="gift__main-img">
+							<div>Путешествия</div>
+						</a>
+						<a href="/catalog/male" class="gift__main-descr_item"> 
+							<img src="./content/image_webp/category/img_63400e74b93d7.webp" alt="Для мужчин" class="gift__main-img">
+							<div>Для нее</div>
+						</a>
+						<a href="/catalog/female" class="gift__main-descr_item"> 
+							<img src="./content/image_webp/product/77/b_img_5c00356141890.webp" alt="Для женщин" class="gift__main-img">
+							<div>СПА</div>
+						</a>
+						<a href="/catalog/flying" class="gift__main-descr_item"> 
+							<img src="./content/image_webp/category/img_63400dccf0408.webp" alt="Полеты" class="gift__main-img">
+							<div>Романтика</div>
+						</a>
+					</div>
 				
 			<div class="gift__main-slider">
 		<div id="bannersSlider" class="gallery gallery_type_banners swiper-container">
@@ -375,7 +409,7 @@
 					<div class="gallery__item swiper-slide">
 						<div class="gallery__image" style="background-image:url('./content/image_webp/banner/img_602d6d44056c1.webp')">
 							<div class="gallery__item-info">
-								<p class="gallery__item-title">Подарки для настоящих ГЕ�&nbsp;ОЕВ! </p>
+								<p class="gallery__item-title">Новый подход <br/>	к бизнес-подаркам</p>
 								<a class="gallery__item-more button button_type_primary" href="https://dream-moments.kz/catalog/7-may">Подробнее</a>
 							</div>
 						</div>
@@ -468,7 +502,7 @@
 				<li class="multi__gift-tabs_item">Активный отдых</li>
 				<li class="multi__gift-tabs_item">Полеты</li>
 				<li class="multi__gift-tabs_item">СПА</li>
-				<li class="multi__gift-tabs_item">�&nbsp;омантика</li>
+				<li class="multi__gift-tabs_item">Романтика</li>
 				<li class="multi__gift-tabs_item">Активный отдых</li>
 				<li class="multi__gift-tabs_item">Экстрим</li>
 				<li class="multi__gift-tabs_item">Загородный отдых</li>
@@ -533,7 +567,7 @@
 							</div>
 						</div>
 					</div>
-														<div class="multi__gift-content_item">
+														<!-- <div class="multi__gift-content_item">
 						<a href="/gift/nabor-dzhentelmen" class="multi__gift-link">
 							<img src="./content/images/logo_light.webp" alt="Мультиподарок для мужчины " Мужской="" характер""="" class="multi__gift-img">
 						</a>                    
@@ -572,7 +606,7 @@
 								<a href="/gift/svidanie-mechty" class="multi__gift-more">Подробнее</a>
 							</div>
 						</div>
-					</div>
+					</div> -->
 				          
 			</div>
 				
@@ -714,8 +748,8 @@
 									<i class="icon icon_type_time"></i> 90 минут								</div>
 													</a>
 						<div class="popular__gift-info">
-							<a href="/gift/katanie-na-snegohode-1-chas-2-chel" class="popular__gift-title">Горный маршрут на снегоходе</a>
-							<div class="popular__gift-descr">Зимнее время – прекрасная пора испытать поистине незабываемый драйв! Подарок в...</div>
+							<a href="/gift/katanie-na-snegohode-1-chas-2-chel" class="popular__gift-title">Картинг </a>
+							<div class="popular__gift-descr">Вас и вашего друга либо подругу ожидает езда на багги по бездорожью  с крутыми виражами. </div>
 							<div class="popular__gift-final">
 								<div class="popular__gift-price">
 																			50 000																										</div>
@@ -731,12 +765,12 @@
 									<i class="icon icon_type_time"></i> от 20 минут								</div>
 													</a>
 						<div class="popular__gift-info">
-							<a href="/gift/polet-na-samolete-cessna-172-n" class="popular__gift-title">Обзорный полет на самолете Cessna (3 пассажира)</a>
-							<div class="popular__gift-descr">Увлекательный полет вдоль черты�&nbsp;города. Отличная панорама города и гор!...</div>
+							<a href="/gift/polet-na-samolete-cessna-172-n" class="popular__gift-title">Катание на снегоходе</a>
+							<div class="popular__gift-descr">Вас и вашего друга либо подругу ожидает езда на скоростном снегоходе по заснеженным ... </div>
 							<div class="popular__gift-final">
 								<div class="popular__gift-price">
-																			от 50 500<br>
-										до 60 000																										</div>
+																		
+										18 000																										</div>
 								<a href="/gift/polet-na-samolete-cessna-172-n" class="popular__gift-more">Подробнее</a>
 							</div>
 						</div>
@@ -749,13 +783,30 @@
 									<i class="icon icon_type_time"></i> 60 минут								</div>
 													</a>
 						<div class="popular__gift-info">
-							<a href="/gift/konnaya-progulka-v-almaty" class="popular__gift-title">Конная прогулка в Алматы</a>
-							<div class="popular__gift-descr">Конная прогулка верхом на лошадях по живописным местам Каскеленского ущелья...</div>
+							<a href="/gift/konnaya-progulka-v-almaty" class="popular__gift-title">Ужин в ресторане </a>
+							<div class="popular__gift-descr">Вас и вашего друга либо подругу ожидает езда на багги по бездорожью  с крутыми виражами. </div>
 							<div class="popular__gift-final">
 								<div class="popular__gift-price">
-																			от 7 500<br>
-										до 30 000																										</div>
+										18 000																										</div>
 								<a href="/gift/konnaya-progulka-v-almaty" class="popular__gift-more">Подробнее</a>
+							</div>
+						</div>
+					</div>
+														<div class="popular__gift-content_item">
+						<a href="/gift/zimnij-vysokogornyj-marshrut-na-baggi" class="popular__gift-link"><img src="./content/image_webp/product/325/c_img_6475909737bf8.webp" alt="Горный маршрут на квадроцикле (Коктобе)" class="popular__gift-img">
+							<div class="list-gift__persons">
+								<i class="icon icon_type_person"></i> 2							</div>
+															<div class="list-gift__time">
+									<i class="icon icon_type_time"></i> ~90 минут								</div>
+													</a>
+						<div class="popular__gift-info">
+							<a href="/gift/zimnij-vysokogornyj-marshrut-na-baggi" class="popular__gift-title">Полет на 
+								дельтаплане</a>
+							<div class="popular__gift-descr">Вас и вашего друга либо подругу ожидает езда на скоростном снегоходе по заснеженным ... </div>
+							<div class="popular__gift-final">
+								<div class="popular__gift-price">
+																			18 000																										</div>
+								<a href="/gift/zimnij-vysokogornyj-marshrut-na-baggi" class="popular__gift-more">Подробнее</a>
 							</div>
 						</div>
 					</div>
@@ -784,8 +835,9 @@
 									<i class="icon icon_type_time"></i> 1 час								</div>
 													</a>
 						<div class="popular__gift-info">
-							<a href="/gift/waterpainting" class="popular__gift-title">Мастер-класс рисования на воде "Эбру" для двоих</a>
-							<div class="popular__gift-descr">Интереснейший мастер-класс рисования на воде - это погружение в удивительный и...</div>
+							<a href="/gift/waterpainting" class="popular__gift-title">Катание 
+								на квадроцикле</a>
+							<div class="popular__gift-descr">Вас и вашего друга либо подругу ожидает езда на скоростном снегоходе по заснеженным ...</div>
 							<div class="popular__gift-final">
 								<div class="popular__gift-price">
 																			7 500																										</div>
@@ -801,8 +853,8 @@
 									<i class="icon icon_type_time"></i> 15 000 тг								</div>
 													</a>
 						<div class="popular__gift-info">
-							<a href="/gift/restoran-leto" class="popular__gift-title">Поход  в семейное кафе "Лето" от Malina Group. Номинал 15 000 тенге</a>
-							<div class="popular__gift-descr">Посещение семейного ресторана "Лето". Номинал сертификата - 15 000...</div>
+							<a href="/gift/restoran-leto" class="popular__gift-title">Укладка прически </a>
+							<div class="popular__gift-descr">Вас и вашего друга либо подругу ожидает езда на багги по бездорожью  с крутыми виражами. </div>
 							<div class="popular__gift-final">
 								<div class="popular__gift-price">
 																			15 000																										</div>
@@ -818,8 +870,9 @@
 									<i class="icon icon_type_time"></i> 2 часа 								</div>
 													</a>
 						<div class="popular__gift-info">
-							<a href="/gift/pejntbol-8-chelovek" class="popular__gift-title">Игра в пейнтбол (8 игроков)</a>
-							<div class="popular__gift-descr">Пейнтбол – командная игра, имитирующая скоротечные бои в ограниченном...</div>
+							<a href="/gift/pejntbol-8-chelovek" class="popular__gift-title">Катание 
+								на квадроцикле</a>
+							<div class="popular__gift-descr">Вас и вашего друга либо подругу ожидает езда на скоростном снегоходе по заснеженным ...</div>
 							<div class="popular__gift-final">
 								<div class="popular__gift-price">
 																			40 000																										</div>
@@ -835,8 +888,8 @@
 									<i class="icon icon_type_time"></i> 20 мин.								</div>
 													</a>
 						<div class="popular__gift-info">
-							<a href="/gift/polet-na-samolete-cessna-172-n-20-minut" class="popular__gift-title">Полет на самолете Cessna 172 N (20 минут)</a>
-							<div class="popular__gift-descr">20 минут полета вдоль черты�&nbsp;города. Отличная панорама города и гор!�&nbsp;Количество...</div>
+							<a href="/gift/polet-na-samolete-cessna-172-n-20-minut" class="popular__gift-title">Полет на воздушном шаре</a>
+							<div class="popular__gift-descr">Вас и вашего друга либо подругу ожидает езда на багги по бездорожью  с крутыми виражами. </div>
 							<div class="popular__gift-final">
 								<div class="popular__gift-price">
 																			50 500																										</div>
@@ -852,8 +905,9 @@
 									<i class="icon icon_type_time"></i> 15 000 тг.								</div>
 													</a>
 						<div class="popular__gift-info">
-							<a href="/gift/lesnaya-skazka-gift-card" class="popular__gift-title">Подарочный сертификат в ГК  "Oi - Qaragai Lesnaya Skazka" (15000)</a>
-							<div class="popular__gift-descr">Номинал сертификата 15 000 тенге. Принимается при оплате�&nbsp; любых услуг курорта...</div>
+							<a href="/gift/lesnaya-skazka-gift-card" class="popular__gift-title">Катание 
+								на снегоходе</a>
+							<div class="popular__gift-descr">Вас и вашего друга либо подругу ожидает езда на скоростном снегоходе по заснеженным ...</div>
 							<div class="popular__gift-final">
 								<div class="popular__gift-price">
 																			15 000																										</div>
@@ -929,8 +983,8 @@
 										<div class="list-gift__info-content">
 											<div class="list-gift__price">
 												<i class="icon icon_type_valute list-gift__valute"></i> 
-																									от 7 500<br>
-													до 30 000																																			</div>
+																									
+													30 000																																			</div>
 										</div>
 										<a href="/gift/konnaya-progulka-v-almaty" class="list-gift__more button">Подробнее</a>
 									</div>

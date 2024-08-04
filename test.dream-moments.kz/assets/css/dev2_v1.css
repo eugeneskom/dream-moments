@@ -28,8 +28,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: MuseoSans, sans-serif;
-    font-weight: 500;
+    font-family: MuseoSansCyrl, sans-serif;
 }
 .fa, .fa::before {
     font: normal normal normal 14px/1 FontAwesome;
@@ -459,7 +458,7 @@ a:hover {
     margin-left: 2px;
 }
 .gift__main-descr {
-    margin-top: 38px;
+    /* margin-top: 38px; */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px 16px;
@@ -477,6 +476,8 @@ a:hover {
     height: auto;
     border-radius: 10px;
     position: relative;
+    height: 100%;
+    object-fit: cover;
 }
 .gift__main-img {
     z-index: -1;
@@ -640,7 +641,7 @@ a:hover {
     border: solid 2px #c8c8c8;
     border-radius: 100%;
     position: absolute;
-    top: 50%;
+    top: 31%;
     left: 45%;
     transform: translate(-50%, -50%);
 }
@@ -662,6 +663,9 @@ a:hover {
 }
 .gallery__item-title {
     font-weight: 700;
+    font-size: 36px;
+    line-height: 1.35;
+    letter-spacing: 0.4px;
 }
 .button_type_primary {
     min-width: 150px;
@@ -706,7 +710,7 @@ a:hover {
     text-align: center;
 }
 .multi__gift-tabs {
-    margin: 60px 0 0 0;
+    margin: 55px 0 0 0;
     padding: 0;
     display: flex;
     align-items: center;
@@ -739,11 +743,12 @@ a:hover {
 }
 .multi__gift-content_active {
     display: flex;
+    column-gap: 18px;
 }
 .multi__gift-content_item, .popular__gift-content_item {
-    width: 33.33%;
+    width: calc((100% / 3) - 12px);
     min-height: 420px;
-    padding: 0 9px;
+    /* padding: 0 9px; */
     margin-top: 18px;
     display: flex;
     flex-direction: column;
@@ -870,6 +875,7 @@ a:hover {
 .popular__gift-wrap {
     display: flex;
     flex-wrap: wrap;
+    gap: 22px;
     margin-top: 28px;
 }
 .popular__gift-slide {
@@ -877,7 +883,7 @@ a:hover {
     margin-top: 49px;
 }
 .popular__gift-content_item {
-    max-width: 20%;
+    max-width: calc((100% / 5) - 18px);
     min-height: 384px;
 }
 .popular__gift-link {
@@ -2610,3 +2616,9 @@ a.radio_item-descr {
 .main__base-tabs li {
     max-width: 24%}
 }
+
+.dropdown-indicator::after {
+    content: " ▼";
+    font-size: 0.8em;
+    vertical-align: middle;
+  }
