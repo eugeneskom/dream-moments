@@ -2046,6 +2046,9 @@ a.radio_item-descr {
 .gift__main, .main__item {
     /* margin-top: 158px; */
 }
+.gift__main.mt{
+    margin-top: 150px;
+}
 .gift__main-search {
     max-width: 25%}
 .gift__main-links {
@@ -2460,7 +2463,7 @@ a.radio_item-descr {
 }
 
 .gift__main.mt{
-    margin-top: 110px;
+    margin-top: 150px;
 }
 .multi__gift {
     margin-top: 47px;
