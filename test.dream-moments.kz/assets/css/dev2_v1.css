@@ -2240,7 +2240,7 @@ a.radio_item-descr {
     order: 1;
 }
 .main__base-tabs {
-    order: 2;
+    /* order: 2; */
 }
 .main__base-slider {
     order: 3;
