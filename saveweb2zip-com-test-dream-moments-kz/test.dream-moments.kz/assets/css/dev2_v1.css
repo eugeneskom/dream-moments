@@ -2055,7 +2055,8 @@ a.radio_item-descr {
     padding: 6px 10px;
 }
 .popular__gift-content_item {
-    max-width: 33.33%}
+    max-width: calc((100% / 3) - 14.67px);
+}
 .main__wrapp {
     grid-template-columns: minmax(0, 934px) minmax(0, 309px);
 }
@@ -2219,6 +2220,10 @@ a.radio_item-descr {
     padding: 0;
 }
 }@media all and (max-width:767px) {
+
+    .navigation-container-mobile{
+        padding: 0 12px;
+    }
     .main__base {
     display: flex;
     flex-direction: column;
