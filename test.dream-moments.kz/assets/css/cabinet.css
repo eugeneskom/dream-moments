@@ -494,6 +494,14 @@
   color: green;
 }
 
+.user-reviews__date-stars{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.user-reviews-with-answer__review__header__info .main__rewiews-title{
+  padding-left: 0px;
+}
 .review-modal {
   position: fixed;
   z-index: 1000;
