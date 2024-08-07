@@ -151,4 +151,53 @@ $(document).ready(function() {
           }
       });
   }
+
+  // Show modal when "Оставить отзыв" is clicked
+  $('.user-reviews-pending__button').on('click', function() {
+    $('#reviewModal').show();
+  });
+
+  // Close modal when 'x' is clicked
+  $('.close').on('click', function() {
+    $('#reviewModal').hide();
+  });
+
+  // Close modal when clicking outside of it
+  $(window).on('click', function(event) {
+    if ($(event.target).is('#reviewModal')) {
+      $('#reviewModal').hide();
+    }
+  });
+
+  // Handle form submission
+  $('#reviewForm').on('submit', function(e) {
+    e.preventDefault();
+    
+    var reviewText = $('#reviewText').val();
+    var rating = $('input[name="rating"]:checked').val();
+
+    // Validate input
+    if (!reviewText || !rating) {
+      alert('Пожалуйста, введите текст отзыва и выберите оценку.');
+      return;
+    }
+
+    // Simulate API call
+    $.ajax({
+      url: 'https://fake-api.example.com/reviews',
+      method: 'POST',
+      data: {
+        text: reviewText,
+        rating: rating
+      },
+      success: function(response) {
+        alert('Отзыв успешно отправлен!');
+        $('#reviewModal').hide();
+        // Here you might want to update the UI to show the new review
+      },
+      error: function() {
+        alert('Произошла ошибка при отправке отзыва. Пожалуйста, попробуйте еще раз.');
+      }
+    });
+  });
 });
