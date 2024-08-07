@@ -50,7 +50,7 @@ $(document).ready(function() {
 
   // Other button click handlers
   $('#activatePromo').on('click', function() {
-      alert('Промокод активирован');
+      // alert('Промокод активирован');
   });
 
   $('#logoutButton').on('click', function() {
@@ -197,6 +197,59 @@ $(document).ready(function() {
       },
       error: function() {
         alert('Произошла ошибка при отправке отзыва. Пожалуйста, попробуйте еще раз.');
+      }
+    });
+  });
+
+
+  // Show promo modal when "Активировать промокод" is clicked
+  $('#activatePromo').on('click', function() {
+    $('#promoModal').addClass('show');
+  });
+
+  // Close modal when 'x' is clicked
+  $('.close').on('click', function() {
+    $(this).closest('.modal').removeClass('show');
+  });
+
+  // Close modal when clicking outside of it
+  $(window).on('click', function(event) {
+    if ($(event.target).hasClass('modal')) {
+      $('.modal').removeClass('show');
+    }
+  });
+
+  // Handle promo form submission
+  $('#promoForm').on('submit', function(e) {
+    e.preventDefault();
+    
+    var promoCode = $('#promoCode').val();
+
+    // Simulate API call
+    $.ajax({
+      url: 'https://fake-api.example.com/activate-promo',
+      method: 'POST',
+      data: {
+        promoCode: promoCode
+      },
+      success: function(response) {
+        // Show success message
+        $('#promoForm').hide();
+        $('<div id="successMessage">Промокод успешно активирован!</div>').insertAfter('#promoForm');
+        
+        // Close modal after 3 seconds
+        setTimeout(function() {
+          $('#promoModal').removeClass('show');
+          // Reset form and remove success message after modal is closed
+          setTimeout(function() {
+            $('#promoForm').show();
+            $('#successMessage').remove();
+            $('#promoCode').val('');
+          }, 300);
+        }, 3000);
+      },
+      error: function() {
+        alert('Произошла ошибка при активации промокода. Пожалуйста, попробуйте еще раз.');
       }
     });
   });

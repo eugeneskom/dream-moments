@@ -1306,7 +1306,7 @@ a.radio_item-descr {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: justify-content;
     align-items: center;
 }
 .main__aside-descr_item {
